@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект "Браузер" | ПППИ</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.1s ease;
+            transform-style: preserve-3d;
+            position: relative;
+            cursor: default;
+        }
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        ul li {
+            margin: 0.8rem 0;
+            position: relative;
+        }
+        ul li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: -1rem;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        footer {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+        footer p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Проект "Браузер"</h1>
+        <p>Дисциплина: Профессиональная практика программной инженерии (ПППИ)</p>
+        <p>Автор: Дмитрий Калугин, DevRect, группа ПИ-21б</p>
+        <nav class="nav-links">
+            <a href="#description">Описание</a>
+            <a href="#modules">Модули</a>
+            <a href="#development">Разработка</a>
+            <a href="#results">Итоги</a>
+            <a href="#materials">Материалы</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section" id="description">
+            <h2>Описание проекта</h2>
+            <p><strong>Название:</strong> Браузер</p>
+            <p><strong>Тема:</strong> Разработка браузера с реализацией не менее 20 средств современных браузеров (например, Google Chrome, не ниже 49-го релиза).</p>
+            <p><strong>Цель:</strong> Создать современный, функциональный и удобный веб-браузер, обеспечивающий пользователям высокую производительность, безопасность и гибкость в использовании.</p>
+        </div>
+
+        <div class="section" id="modules">
+            <h2>Основные модули проекта</h2>
+            <p>Проект включает 10 ключевых модулей, каждый из которых решает определённые задачи:</p>
+            <ul>
+                <li><strong>Пользовательский интерфейс:</strong> Адресная строка с автозаполнением, вкладочная система, панель инструментов.</li>
+                <li><strong>Рендеринг веб-страниц:</strong> Парсинг HTML, поддержка CSS3 и JavaScript, работа с DOM.</li>
+                <li><strong>Управление вкладками:</strong> Многократное открытие вкладок, режим "инкогнито", восстановление сессий.</li>
+                <li><strong>Сетевое взаимодействие:</strong> Поддержка HTTPS, кэширование, управление загрузками.</li>
+                <li><strong>История и закладки:</strong> Хронология посещений, организация закладок, синхронизация.</li>
+                <li><strong>Безопасность:</strong> Блокировка вредоносных сайтов, управление cookies, инкогнито-режим.</li>
+                <li><strong>Расширения:</strong> API для плагинов, магазин расширений, управление настройками.</li>
+                <li><strong>Производительность:</strong> Оптимизация памяти, многопоточная обработка.</li>
+                <li><strong>Мультимедиа:</strong> Поддержка MP4, WebM, полноэкранный режим для видео.</li>
+                <li><strong>Кроссплатформенность:</strong> Адаптация под Windows, macOS, Linux, Android, iOS.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="development">
+            <h2>Процесс разработки</h2>
+            <p>Разработка велась поэтапно в рамках лабораторных работ:</p>
+            <ul>
+                <li>Этап 1: Изучение требований и проектирование архитектуры.</li>
+                <li>Этап 2: Реализация базового интерфейса и рендеринга страниц.</li>
+                <li>Этап 3: Добавление управления вкладками и сетевых функций.</li>
+                <li>Этап 4: Интеграция модулей безопасности и мультимедиа.</li>
+                <li>Этап 5: Оптимизация производительности и тестирование на разных платформах.</li>
+            </ul>
+            <p>Для документирования использовались HTML Help Workshop (для .chm) и Doxygen (для кода).</p>
+        </div>
+
+        <div class="section" id="results">
+            <h2>Итоги проекта</h2>
+            <p>Проект представляет собой разработку браузера с реализацией не менее 20 средств современных браузеров. Были выделены ключевые возможности, разделённые на 10 модулей: пользовательский интерфейс, рендеринг веб-страниц, управление вкладками и окнами, сетевое взаимодействие, управление историей и закладками, безопасность и конфиденциальность, поддержка расширений, оптимизация производительности, поддержка мультимедиа и кроссплатформенная совместимость. Каждый модуль описан с указанием конкретных задач, что позволяет структурировать процесс разработки и определить основные направления работы.</p>
+        </div>
+
+        <div class="section" id="materials">
+            <h2>Ссылки на материалы</h2>
+            <ul>
+                <li><a href="docs/labs/ЛР 1.docx" download>Лабораторная работа 1</a> — Начальная структура проекта</li>
+                <li><a href="docs/labs/ЛР 2.docx" download>Лабораторная работа 2</a> — Реализация интерфейса</li>
+                <li><a href="docs/labs/ЛР 3.docx" download>Лабораторная работа 3</a> — Модуль рендеринга</li>
+                <li><a href="docs/labs/ЛР 4.docx" download>Лабораторная работа 4</a> — Управление вкладками</li>
+                <li><a href="docs/labs/ЛР 5.docx" download>Лабораторная работа 5</a> — Сетевое взаимодействие</li>
+                <li><a href="Browser.chm" download>Скомпилированная документация (.chm)</a></li>
+                <li><a href="docs/doxygen/html/index.html">Документация Doxygen (HTML)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Дмитрий Калугин, ПИ-21б</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach(section => {
+            section.addEventListener('mousemove', (e) => {
+                const rect = section.getBoundingClientRect();
+                const x = e.clientX - rect.left; // Позиция X относительно левого края блока
+                const y = e.clientY - rect.top;  // Позиция Y относительно верхнего края блока
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                // Вычисляем угол наклона в зависимости от положения курсора
+                const rotateX = (centerY - y) / centerY * 1; // Макс. угол наклона 10 градусов
+                const rotateY = (x - centerX) / centerX * 1;
+
+                section.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            section.addEventListener('mouseleave', () => {
+                // Возвращаем блок в исходное положение
+                section.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    </script>
+</body>
+</html>

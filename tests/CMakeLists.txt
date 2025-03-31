@@ -21,8 +21,13 @@ add_executable(tst_rendering tst_rendering.cpp)
 target_link_libraries(tst_rendering PRIVATE rendering Qt5::Test Qt5::WebEngineWidgets Qt5::Core)
 add_test(NAME tst_rendering COMMAND tst_rendering)
 
+# Тест для tabs
+add_executable(tst_tabs tst_tabs.cpp)
+target_link_libraries(tst_tabs PRIVATE tabs Qt5::Test Qt5::Widgets Qt5::Core)
+add_test(NAME tst_tabs COMMAND tst_tabs)
+
 # Указываем выходную директорию для тестов
-set_target_properties(tst_core tst_ui tst_rendering
+set_target_properties(tst_core tst_ui tst_rendering tst_tabs
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
 )

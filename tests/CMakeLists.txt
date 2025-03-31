@@ -6,11 +6,6 @@ find_package(Qt5 COMPONENTS Test REQUIRED)
 # Включаем тестирование
 enable_testing()
 
-# Тест для core
-add_executable(tst_core tst_core.cpp)
-target_link_libraries(tst_core PRIVATE core ui rendering tabs network history security extensions performance multimedia platform Qt5::Test Qt5::Widgets Qt5::Core)
-add_test(NAME tst_core COMMAND tst_core)
-
 # Тест для ui
 add_executable(tst_ui tst_ui.cpp)
 target_link_libraries(tst_ui PRIVATE ui Qt5::Test Qt5::Widgets Qt5::Core)
@@ -61,8 +56,13 @@ add_executable(tst_platform tst_platform.cpp)
 target_link_libraries(tst_platform PRIVATE platform Qt5::Test Qt5::Widgets Qt5::Core)
 add_test(NAME tst_platform COMMAND tst_platform)
 
+# Тест для core
+add_executable(tst_core tst_core.cpp)
+target_link_libraries(tst_core PRIVATE core ui rendering tabs network history security extensions performance multimedia platform Qt5::Test Qt5::Widgets Qt5::Core)
+add_test(NAME tst_core COMMAND tst_core)
+
 # Указываем выходную директорию для тестов
-set_target_properties(tst_core tst_ui tst_rendering tst_tabs tst_performance tst_history tst_security tst_extensions tst_performance tst_multimedia tst_platform
+set_target_properties(tst_ui tst_rendering tst_tabs tst_network tst_history tst_security tst_extensions tst_performance tst_multimedia tst_platform tst_core
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
 )

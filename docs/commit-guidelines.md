@@ -1,65 +1,66 @@
-# Commit Message Guidelines
+# Руководство по написанию сообщений коммитов
 
-To maintain a consistent and clear commit history, follow these strict rules when writing commit messages.
+Для поддержания согласованной и понятной истории коммитов следуйте этим строгим правилам при написании сообщений коммитов.
 
-## Structure
+## Структура
 
-Each commit message must have the following format:
+Каждое сообщение коммита должно иметь следующий формат:
 
 ```
-<prefix>: <short description>
+<prefix>: <краткое описание>
 
-<long description>
+<подробное описание>
 ```
 
 ---
 
-### Prefixes
+### Префиксы
 
-Use one of the following prefixes to categorize your commit:
-- **feat**: Introducing a new feature
-- **fix**: Fixing a bug
-- **refactor**: Code refactoring without changing functionality
-- **docs**: Documentation updates
-- **style**: Code style improvements (formatting, linting, etc.)
-- **test**: Adding or modifying tests
-- **chore**: Maintenance tasks (dependencies, scripts, etc.)
+Используйте один из следующих префиксов для категоризации коммита:
+- **feat**: Введение новой функциональности
+- **fix**: Исправление ошибки
+- **refactor**: Рефакторинг кода без изменения функциональности
+- **docs**: Обновление документации
+- **style**: Улучшение стиля кода (форматирование, линтинг и т. д.)
+- **test**: Добавление или модификация тестов
+- **chore**: Обслуживание проекта (зависимости, скрипты и т. д.)
 
-## Short Description
-- Write a concise summary of the change (max 50 characters).
-- Use the imperative mood (e.g., "Add new API endpoint" instead of "Added").
-- Do not end with a period.
+## Краткое описание
+- Напишите краткое описание изменений (не более 50 символов).
+- Используйте повелительное наклонение (например, "Добавить новый API-эндпоинт" вместо "Добавлен").
+- Не ставьте точку в конце.
 
-## Long Description
-- Provide additional details if necessary.
-- List each major change on a new line.
-- Explain the motivation and impact of the change.
+## Подробное описание
+- При необходимости укажите дополнительные детали.
+- Перечислите каждое основное изменение с новой строки.
+- Объясните мотивацию и влияние изменений.
 
 ---
 
-## Examples
+## Примеры
 
-### Example 1 (Feature Addition)
+### Пример 1 (Добавление функциональности)
 ```
-feat: Implement user authentication
+feat: Реализовать аутентификацию пользователей
 
-- Add JWT-based authentication
-- Create login and registration endpoints
-- Secure protected routes
-```
-
-### Example 2 (Bug Fix)
-```
-fix: Resolve crash on startup
-
-- Fix null pointer exception in MainActivity
-- Ensure database initialization runs before accessing data
+- Добавлена аутентификация на основе JWT
+- Созданы эндпоинты для входа и регистрации
+- Защищены маршруты, требующие авторизации
 ```
 
-### Example 3 (Code Refactoring)
+### Пример 2 (Исправление ошибки)
 ```
-refactor: Optimize database queries
+fix: Исправить падение при запуске
 
-- Replace N+1 queries with batch fetching
-- Improve indexing for faster lookups
+- Устранена ошибка null pointer в MainActivity
+- Обеспечена инициализация базы данных перед доступом к данным
 ```
+
+### Пример 3 (Рефакторинг кода)
+```
+refactor: Оптимизировать запросы к базе данных
+
+- Заменены N+1 запросы на пакетную выборку
+- Улучшены индексы для ускорения поиска
+```
+

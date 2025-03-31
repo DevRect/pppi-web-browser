@@ -56,8 +56,13 @@ add_executable(tst_multimedia tst_multimedia.cpp)
 target_link_libraries(tst_multimedia PRIVATE multimedia Qt5::Test Qt5::Multimedia Qt5::Widgets Qt5::Core)
 add_test(NAME tst_multimedia COMMAND tst_multimedia)
 
+# Тест для platform
+add_executable(tst_platform tst_platform.cpp)
+target_link_libraries(tst_platform PRIVATE platform Qt5::Test Qt5::Widgets Qt5::Core)
+add_test(NAME tst_platform COMMAND tst_platform)
+
 # Указываем выходную директорию для тестов
-set_target_properties(tst_core tst_ui tst_rendering tst_tabs tst_performance tst_history tst_security tst_extensions tst_performance tst_multimedia
+set_target_properties(tst_core tst_ui tst_rendering tst_tabs tst_performance tst_history tst_security tst_extensions tst_performance tst_multimedia tst_platform
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
 )

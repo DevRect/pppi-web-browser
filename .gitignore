@@ -1,0 +1,25 @@
+# Игнорируем сборочные файлы
+build/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Игнорируем временные файлы
+*.swp
+*.swo
+*~
+
+# Игнорируем файлы CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Игнорируем пользовательские файлы IDE
+*.user
+*.vscode/
+*.idea/

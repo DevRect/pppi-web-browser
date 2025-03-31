@@ -12,7 +12,7 @@ target_link_libraries(tst_ui PRIVATE ui Qt5::Test Qt5::Widgets Qt5::Core)
 add_test(NAME tst_ui COMMAND tst_ui)
 
 # Указываем выходную директорию для тестов
-set_target_properties(tst_ui tst_rendering tst_tabs tst_network tst_history tst_security tst_extensions tst_performance tst_multimedia tst_platform tst_core
+set_target_properties(tst_ui
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
 )

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft® HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+    <param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Браузер">
+        <param name="Local" value="index.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Пользовательский интерфейс">
+        <param name="Local" value="ui.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Рендеринг">
+        <param name="Local" value="render.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Вкладки">
+        <param name="Local" value="tabs.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Сеть">
+        <param name="Local" value="network.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="История">
+        <param name="Local" value="history.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Безопасность">
+        <param name="Local" value="security.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Расширения">
+        <param name="Local" value="extensions.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Производительность">
+        <param name="Local" value="performance.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Мультимедиа">
+        <param name="Local" value="multimedia.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Кроссплатформенность">
+        <param name="Local" value="crossplatform.html">
+        </OBJECT></LI>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Итог">
+        <param name="Local" value="summary.html">
+        </OBJECT></LI>
+</UL>
+</BODY>
+</HTML>

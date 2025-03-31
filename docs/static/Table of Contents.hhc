@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft® HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<UL>
+    <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Документация программного проекта: Браузер">
+        <param name="Local" value="./docs/static/index.html">
+        </OBJECT>
+    <UL>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль пользовательского интерфейса">
+            <param name="Local" value="./docs/static/ui.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль рендеринга веб-страниц">
+            <param name="Local" value="./docs/static/render.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль управления вкладками и окнами">
+            <param name="Local" value="./docs/static/tabs.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль сетевого взаимодействия">
+            <param name="Local" value="./docs/static/network.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль управления историей и закладками">
+            <param name="Local" value="./docs/static/history.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль безопасности и конфиденциальности">
+            <param name="Local" value="./docs/static/security.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль расширений и плагинов">
+            <param name="Local" value="./docs/static/extensions.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль оптимизации производительности">
+            <param name="Local" value="./docs/static/perfomance.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль поддержки мультимедиа">
+            <param name="Local" value="./docs/static/multimedia.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Модуль кроссплатформенной совместимости">
+            <param name="Local" value="./docs/static/crossplatform.html">
+            </OBJECT></LI>
+        <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Итоговое описание проекта">
+            <param name="Local" value="./docs/static/summary.html">
+            </OBJECT></LI>
+    </UL>
+    </LI>
+</UL>
+</BODY>
+</HTML>

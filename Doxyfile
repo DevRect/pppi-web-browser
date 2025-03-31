@@ -1,0 +1,8 @@
+# Doxyfile
+PROJECT_NAME           = "BrowserProject"
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = src include
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+FILE_PATTERNS          = *.h *.cpp

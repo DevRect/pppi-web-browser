@@ -31,8 +31,13 @@ add_executable(tst_network tst_network.cpp)
 target_link_libraries(tst_network PRIVATE network Qt5::Test Qt5::Network Qt5::Core)
 add_test(NAME tst_network COMMAND tst_network)
 
+# Тест для history
+add_executable(tst_history tst_history.cpp)
+target_link_libraries(tst_history PRIVATE history Qt5::Test Qt5::Core)
+add_test(NAME tst_history COMMAND tst_history)
+
 # Указываем выходную директорию для тестов
-set_target_properties(tst_core tst_ui tst_rendering tst_tabs tst_performance
+set_target_properties(tst_core tst_ui tst_rendering tst_tabs tst_performance tst_history
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
 )
